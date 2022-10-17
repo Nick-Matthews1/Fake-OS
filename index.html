@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CSS Links-->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./vex-master/dist/css/vex-theme-os.css">
+  <!--JS Links-->
+  <script src="script.js" defer></script>
+  <script src="./vex-master/dist/js/vex.combined.js"></script>
+  <script>
+    vex.defaultOptions.className = "vex-theme-os"
+  </script>
+
+  <script src="https://kit.fontawesome.com/3509ef9ecd.js" crossorigin="anonymous"></script>
+  <title>Fake-Os</title>
+
+  <link rel="shortcut Icon" href="./images/Os.png" type="image/x-icon"></link>
+  
+</head>
+<body>
+  <!--App container and bottom taskbar-->
+    <div class="br-os-container">
+      <div id="br-os-apps">
+        <div class="app"></div>
+      </div>
+      <div id="taskbar"></div>
+
+      <!--Date and Time-->
+      
+      <div class="datetime">
+        <div class="date"></div>
+        <div class="time"></div>
+        </div>
+    </div>
+
+
+    
+    <!--App Window-->
+<div class="br-os-window" draggable="true">
+      <!--Top Window-->
+  <div class="window-bar">
+        <!--Icon-->
+  <div class="brand"></div>
+        <!--Maximise, cross etc buttons-->
+    <div class="buttons">
+        <!--Maximise Button-->
+        <button id="maximise">
+          <i class="fa fa-window-maximise"></i>
+        </button>
+        <!--Window size restore button-->
+        <button id="shorter">
+          <i class="fa fa-window-restore"></i>
+        </button>
+        <!--App close button-->
+        <button id="cross">
+          <i class="fa fa-times"></i>
+        </button>
+    </div>
+  </div>
+      <!--Main App-->
+      <div class="app" id="app-main">
+
+      </div>
+</div>
+
+<!--Hide app-->
+<div id="app-hide"></div>
+
+<!--Context Menu-->
+<nav id="os-ct-menu">
+  <ul>
+    <li><a href="javascript:;">Open</a></li>
+    <li><a href="javascript:;">Run as administrator</a></li>
+    <li><a href="javascript:;">Remove</a></li>
+  </ul>
+</nav>
+
+
+</body>
+</html>
